@@ -15,6 +15,7 @@ export const StyledButton = styled.button`
   background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
+  font-size:2rem;
   color: var(--secondary-text);
   width: 100px;
   cursor: pointer;
