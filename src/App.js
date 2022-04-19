@@ -54,45 +54,45 @@ export const StyledRoundButton = styled.button`
 `;
 
 export const ResponsiveWrapper = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: stretched;
-  align-items: stretched;
-  width: 100%;
-  @media (min-width: 767px) {
-    flex-direction: row;
-  }
+  // display: flex;
+  // flex: 1;
+  // flex-direction: column;
+  // justify-content: stretched;
+  // align-items: stretched;
+  // width: 100%;
+  // @media (min-width: 767px) {
+  //   flex-direction: row;
+  // }
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
-  @media (min-width: 767px) {
-    width: 300px;
-  }
-  transition: width 0.5s;
-  transition: height 0.5s;
+  // width: 200px;
+  // @media (min-width: 767px) {
+  //   width: 300px;
+  // }
+  // transition: width 0.5s;
+  // transition: height 0.5s;
 `;
 
-export const StyledImg = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
-  background-color: var(--accent);
-  border-radius: 100%;
-  width: 200px;
-  @media (min-width: 900px) {
-    width: 250px;
-  }
-  @media (min-width: 1000px) {
-    width: 300px;
-  }
-  transition: width 0.5s;
-`;
+// export const StyledImg = styled.img`
+//   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+//   border: 4px dashed var(--secondary);
+//   background-color: var(--accent);
+//   border-radius: 100%;
+//   width: 200px;
+//   @media (min-width: 900px) {
+//     width: 250px;
+//   }
+//   @media (min-width: 1000px) {
+//     width: 300px;
+//   }
+//   transition: width 0.5s;
+// `;
 
-export const StyledLink = styled.a`
-  color: var(--secondary);
-  text-decoration: none;
-`;
+// export const StyledLink = styled.a`
+//   color: var(--secondary);
+//   text-decoration: none;
+// `;
 
 function App() {
   const dispatch = useDispatch();
@@ -195,6 +195,15 @@ function App() {
 
   return (
     <s.Screen>
+                <StyledButton
+                  onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(connect());
+                    getData();
+                  }}
+                >
+                  CONNECT TO WALLET
+                </StyledButton>
       <s.Container
         flex={1}
         ai={"center"}
@@ -247,7 +256,7 @@ function App() {
                 textAlign: "center",
               }}
             >
-              <StyledButton
+              {/* <StyledButton
                 onClick={(e) => {
                   window.open("/config/roadmap.pdf", "_blank");
                 }}
@@ -256,7 +265,7 @@ function App() {
                 }}
               >
                 Roadmap
-              </StyledButton>
+              </StyledButton> */}
               <StyledButton
                 style={{
                   margin: "5px",
@@ -288,18 +297,18 @@ function App() {
               </>
             ) : (
               <>
-                <s.TextTitle
+                {/* <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
+                </s.TextTitle> */}
                 <s.SpacerXSmall />
-                <s.TextDescription
+                {/* <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   Excluding gas fees.
-                </s.TextDescription>
+                </s.TextDescription> */}
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -313,15 +322,6 @@ function App() {
                       Connect to the {CONFIG.NETWORK.NAME} network
                     </s.TextDescription>
                     <s.SpacerSmall />
-                    <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                    >
-                      CONNECT
-                    </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
@@ -388,7 +388,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "MINTING" : "MINT"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -425,9 +425,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            {/* We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            gas limit. */}
           </s.TextDescription>
         </s.Container>
       </s.Container>
