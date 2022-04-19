@@ -76,7 +76,6 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -207,7 +206,7 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            {/* <StyledImg alt={"example"} src={"/config/images/example.gif"} /> */}
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -238,16 +237,16 @@ function App() {
                 color: "var(--primary-text)",
               }}
             >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+              {/* <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
+              </StyledLink> */}
             </s.TextDescription>
             <span
               style={{
                 textAlign: "center",
               }}
             >
-              <StyledButton
+              {/* <StyledButton
                 onClick={(e) => {
                   window.open("/config/roadmap.pdf", "_blank");
                 }}
@@ -256,8 +255,8 @@ function App() {
                 }}
               >
                 Roadmap
-              </StyledButton>
-              <StyledButton
+              </StyledButton> */}
+              {/* <StyledButton
                 style={{
                   margin: "5px",
                 }}
@@ -266,7 +265,7 @@ function App() {
                 }}
               >
                 {CONFIG.MARKETPLACE}
-              </StyledButton>
+              </StyledButton> */}
             </span>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -320,7 +319,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      CONNECT TO WALLET
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -399,11 +398,11 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
+            {/* <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
-            />
+            /> */}
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
