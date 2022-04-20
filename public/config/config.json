@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x3d078A20D84B335359E7396fD32A6a98e2c11a37",
-  "SCAN_LINK": "https://testnet.arbiscan.io/address/0x3d078a20d84b335359e7396fd32a6a98e2c11a37#writeContract",
+  "CONTRACT_ADDRESS": "0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
+  "SCAN_LINK": "https://polygonscan.com/token/0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
   "NETWORK": {
     "NAME": "Arbitrum",
     "SYMBOL": "ETH",
