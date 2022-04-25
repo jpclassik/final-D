@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xf0688ffebdd56027e504656dca6226674efe59cc",
-  "SCAN_LINK": "https://testnet.arbiscan.io/address/0xf0688ffebdd56027e504656dca6226674efe59cc",
+  "CONTRACT_ADDRESS": "0x55D0f410454C286D15799E8E0D95d22aEE37a9F0",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x55d0f410454c286d15799e8e0d95d22aee37a9f0",
   "NETWORK": {
-    "NAME": "Arbitrum",
-    "SYMBOL": "ETH",
-    "ID": 421611
+    "NAME": "Polygon",
+    "SYMBOL": "MATIC",
+    "ID": 80001
   },
   "NFT_NAME": "Gentle Doggies Serum",
   "SYMBOL": "GDS",
@@ -12,7 +12,7 @@
   "WEI_COST": 4000000000000000000,
   "DISPLAY_COST": 0,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
+  "MARKETPLACE": "Tofu",
+  "MARKETPLACE_LINK": "#",
   "SHOW_BACKGROUND": true
 }
