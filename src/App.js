@@ -150,21 +150,21 @@ function App() {
       });
   };
 
-  const decrementMintAmount = () => {
-    let newMintAmount = mintAmount - 1;
-    if (newMintAmount < 1) {
-      newMintAmount = 1;
-    }
-    setMintAmount(newMintAmount);
-  };
+  // const decrementMintAmount = () => {
+  //   let newMintAmount = mintAmount - 1;
+  //   if (newMintAmount < 1) {
+  //     newMintAmount = 1;
+  //   }
+  //   setMintAmount(newMintAmount);
+  // };
 
-  const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
-    }
-    setMintAmount(newMintAmount);
-  };
+  // const incrementMintAmount = () => {
+  //   let newMintAmount = mintAmount + 1;
+  //   if (newMintAmount > 50) {
+  //     newMintAmount = 50;
+  //   }
+  //   setMintAmount(newMintAmount);
+  // };
 
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
