@@ -9,9 +9,9 @@
   "NFT_NAME": "Gentle Doggies Serum",
   "SYMBOL": "GDS",
   "MAX_SUPPLY": 1000,
-  "WEI_COST": 4000000000000000000,
+  "WEI_COST": null,
   "DISPLAY_COST": 0,
-  "GAS_LIMIT": 285000,
+  "GAS_LIMIT": 350000,
   "MARKETPLACE": "Tofu",
   "MARKETPLACE_LINK": "#",
   "SHOW_BACKGROUND": true
